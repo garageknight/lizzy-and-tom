@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Golden Stag`,
-    description: `Golden Stag`,
+    title: `Lizzy & Tom`,
+    description: `Lizzy & Tom`,
     author: `Tom Odell`,
   },
   plugins: [
