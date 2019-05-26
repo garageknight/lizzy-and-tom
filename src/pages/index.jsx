@@ -1,20 +1,26 @@
 import React from "react";
-// import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+import Home from "../components/Home";
+import GettingThere from "../components/GettingThere";
+import WhereToStay from "../components/WhereToStay";
+import Gifts from "../components/Gifts";
+import WhatToBring from "../components/WhatToBring";
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`lizzy`, `tom`, `wedding`]} />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }} />
-    <h2>Details to come...</h2>
-    <img
-      alt="invite"
-      src="https://s3-eu-west-1.amazonaws.com/www.lizzyandttom.com/tom-and-lizzy.svg"
+    <SEO
+      description="Lizzy and Tom's Wedding"
+      title="Home"
+      keywords={[`lizzy`, `tom`, `wedding`]}
     />
-    {/* <TomAndLizzy /> */}
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <Home />
+    <GettingThere />
+    <WhereToStay />
+    <Gifts />
+    <WhatToBring />
   </Layout>
 );
 
