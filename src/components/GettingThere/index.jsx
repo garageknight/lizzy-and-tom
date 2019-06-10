@@ -6,7 +6,7 @@ import Body from "../Body";
 import Map from "./Map";
 
 const GettingThere = () => (
-  <Card id="getting-there" color="rgba(124,162,120, 0.8)">
+  <Card id="getting-there" color="#eaeaea">
     <Content>
       <Title text="Getting There" />
       <Body

@@ -7,16 +7,26 @@ const Container = styled.div`
   padding-bottom: 2rem;
 `;
 
-const Title = ({ text }) => (
+const Title = ({ text, color }) => (
   <Container>
-    <StyledText center size={2.25} style={{ fontWeight: "bold" }}>
+    <StyledText
+      style={{ fontFamily: "Cormorant SC" }}
+      color={color}
+      center
+      size={2.75}
+    >
       {text}
     </StyledText>
   </Container>
 );
 
+Title.defaultProps = {
+  color: "black"
+};
+
 Title.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  color: PropTypes.string
 };
 
 export default Title;

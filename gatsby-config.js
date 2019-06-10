@@ -5,6 +5,29 @@ module.exports = {
     author: `Tom Odell`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Dancing Script`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Cormorant SC`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Cormorant Garamond`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Lato`,
+            variants: [`400`, `700`]
+          }
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

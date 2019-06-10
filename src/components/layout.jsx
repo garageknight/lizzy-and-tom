@@ -10,8 +10,8 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./Header";
-// import "./layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./layout.css";
 
 const headerHeight = 56;
 
@@ -44,14 +44,18 @@ const Layout = ({ children }) => (
         />
         <div
           style={{
-            backgroundImage: `url("https://s3-eu-west-1.amazonaws.com/www.lizzyandttom.com/tom-and-lizzy.svg")`,
+            // backgroundImage: `url("https://s3-eu-west-1.amazonaws.com/www.lizzyandttom.com/tom-and-lizzy.svg")`,
+            // backgroundColor: "rgb(236, 227, 223)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center bottom",
             backgroundAttachment: "fixed",
             backgroundSize: 350,
             marginTop: `${headerHeight}px`,
             padding: `1.45rem 0px 0px`,
-            paddingTop: 0
+            paddingTop: 0,
+            maxWidth: 960,
+            marginRight: "auto",
+            marginLeft: "auto"
           }}
         >
           <main>{children}</main>

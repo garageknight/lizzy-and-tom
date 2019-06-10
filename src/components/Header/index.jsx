@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import styled from "styled-components";
 
 const sectionObjs = [
   { loc: "/#home", name: "Home" },
@@ -20,10 +21,14 @@ const sectionObjs = [
 
 const createLinks = (sections, color) =>
   sections.map(section => (
-    <Link to={section.loc} style={{ color }}>
+    <Link key={section.loc} to={section.loc} style={{ color }}>
       {section.name}
     </Link>
   ));
+
+const StyledNavBarBrand = styled(NavbarBrand)`
+  font-family: "Garamond";
+`;
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -45,12 +50,12 @@ export default class Example extends React.Component {
     const { isOpen } = this.state;
     return (
       <div>
-        <Navbar navbar={false} fixed="top" color="dark" dark expand="md">
-          <NavbarBrand href="/">Lizzy & Tom 2019</NavbarBrand>
+        <Navbar navbar={false} fixed="top" light expand="md">
+          <StyledNavBarBrand href="/">Lizzy & Tom 2019</StyledNavBarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              {createLinks(sectionObjs, "white").map(link => (
+              {createLinks(sectionObjs, "black").map(link => (
                 <NavItem onClick={this.toggle}>
                   <NavLink>{link}</NavLink>
                 </NavItem>

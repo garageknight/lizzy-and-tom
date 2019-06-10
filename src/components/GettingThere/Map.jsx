@@ -7,8 +7,8 @@ import MapMarker from "./MapMarker";
 const Container = styled.div`
   margin: auto;
   height: 50vh;
-  max-width: 960px;
-  width: 80vw;
+  max-width: 100%;
+  width: 75vw;
 `;
 
 const SimpleMap = ({ center, zoom }) => (

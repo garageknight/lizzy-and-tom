@@ -7,9 +7,9 @@ const Container = styled.div`
   padding-bottom: 2rem;
 `;
 
-const Body = ({ text }) => (
+const Body = ({ text, leftAlign }) => (
   <Container>
-    <StyledText center size={1}>
+    <StyledText center={!leftAlign} size={1.3}>
       {text}
     </StyledText>
   </Container>
