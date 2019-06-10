@@ -7,7 +7,7 @@ import Pods from "../Pods";
 import Tents from "../Tents";
 
 const WhereToStay = () => (
-  <Card id="where-to-stay">
+  <Card id="where-to-stay" color="white">
     <Content>
       <Title text="Where To Stay / Camping" />
       <Body text="The field is very close by to several towns & villages with Air bnbs, hotels etc. A bit of googling will show you where to stay." />
