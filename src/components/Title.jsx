@@ -10,8 +10,7 @@ const Container = styled.div`
 const Title = ({ text, color }) => (
   <Container>
     <StyledText
-      style={{ fontFamily: "Cormorant SC" }}
-      color={color}
+      style={{ fontFamily: "Cormorant SC", color: color || "black" }}
       center
       size={2.75}
     >
