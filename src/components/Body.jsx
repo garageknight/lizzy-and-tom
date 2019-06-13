@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const Body = ({ text, leftAlign }) => (
   <Container>
-    <StyledText center={!leftAlign} size={1.3}>
+    <StyledText center size={1.3}>
       {text}
     </StyledText>
   </Container>

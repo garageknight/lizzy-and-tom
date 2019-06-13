@@ -11,9 +11,15 @@ const WhereToStay = () => (
     <Content>
       <Title text="Where To Stay / Camping" />
       <Body text="The field is very close by to several towns & villages with Air bnbs, hotels etc. A bit of googling will show you where to stay." />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <Pods imageStyle={{ width: "45%", marginBottom: 10 }} />
-        <Tents imageStyle={{ width: "45%", marginBottom: 10 }} />
+      <div
+        style={{
+          marginBottom: 30,
+          display: "flex",
+          justifyContent: "space-between"
+        }}
+      >
+        <Pods imageStyle={{ width: "48%" }} />
+        <Tents imageStyle={{ width: "48%" }} />
       </div>
       <Body text="Camping! We are going to be spending the wedding night in the field in Mandy and Gary's wonderful caravan and would welcome anybody who would also like to stay to do so, we just need to know beforehand." />
       <Body text="We will be pitching tents ahead of time, providing bedding etc. so you will just need to bring yourselves and a change of clothes. The party will most likely go into the small hours, we have a fire pit and the music only needs to be turned down at midnight, so we'd love it if you'd like to stay with us!" />

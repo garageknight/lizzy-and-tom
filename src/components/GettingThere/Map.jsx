@@ -21,6 +21,7 @@ const SimpleMap = ({ center, zoom }) => (
     >
       <MapMarker size={16} lat={51.291847} lng={-0.89444} />
     </GoogleMapReact>
+    <a href="https://maps.google.com/?q=51.291847,-0.89444">Open In Maps</a>
   </Container>
 );
 

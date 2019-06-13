@@ -9,6 +9,7 @@ import GettingThere from "../components/GettingThere";
 import WhereToStay from "../components/WhereToStay";
 import Gifts from "../components/Gifts";
 import WhatToBring from "../components/WhatToBring";
+import Itinerary from "../components/Itinerary";
 
 const IndexPage = () => (
   <div style={{ width: "100%", backgroundColor: "whitesmoke" }}>
@@ -22,6 +23,7 @@ const IndexPage = () => (
       <WelcomeText />
       <GettingThere />
       <WhereToStay />
+      <Itinerary />
       <Gifts />
       <WhatToBring />
     </Layout>

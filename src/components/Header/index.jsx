@@ -15,6 +15,7 @@ const sectionObjs = [
   { loc: "/#home", name: "Home" },
   { loc: "/#getting-there", name: "Getting There" },
   { loc: "/#where-to-stay", name: "Where To Stay" },
+  { loc: "/#itinerary", name: "Itinerary" },
   { loc: "/#gifts", name: "Gifts" },
   { loc: "/#what-to-bring", name: "What To Bring" }
 ];
@@ -50,7 +51,7 @@ export default class Example extends React.Component {
     const { isOpen } = this.state;
     return (
       <div>
-        <Navbar navbar={false} fixed="top" light expand="md">
+        <Navbar navbar={false} fixed="top" light expand="lg">
           <StyledNavBarBrand href="/">Lizzy & Tom 2019</StyledNavBarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
